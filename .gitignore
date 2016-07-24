@@ -45,3 +45,5 @@ uploads/
 *.map
 
 json/
+
+run.js

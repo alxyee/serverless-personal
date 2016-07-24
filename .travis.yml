@@ -10,12 +10,6 @@ addons:
     packages:
     - g++-4.8
 script:
-#- npm run lint
-#- npm run test
-deploy:
-  provider: s3
-  access_key_id: "AKIAI7MKGPRHR65CWF4Q"
-  secret_access_key: "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"
-  bucket: "personalayee"
-  skip_cleanup: true
-  local_dir: public
+- npm run lint
+- npm run test
+- npm run publish
