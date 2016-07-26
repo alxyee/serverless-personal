@@ -29,7 +29,7 @@ class HomePageView extends React.Component {
     render() {
         return (
             <Layout className={s.content}>
-                <button onClick={()=>{this.props.buttonWasClicked()}}>Click me</button>
+                <button onClick={()=>{this.props.buttonWasClicked()}}>Click me now</button>
                 <div dangerouslySetInnerHTML={{ __html: html }}/>
                 <h4>Articles</h4>
                 <ul>

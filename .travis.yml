@@ -9,6 +9,8 @@ addons:
     - ubuntu-toolchain-r-test
     packages:
     - g++-4.8
+scripts:
+- npm run build
 deploy:
   provider: s3
   access_key_id: AKIAI7MKGPRHR65CWF4Q
