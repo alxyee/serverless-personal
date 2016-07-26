@@ -37,7 +37,9 @@ node_modules
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
-public/dist/
+public/dist/*
+!public/dist/main.**
+
 uploads/
 
 .idea
@@ -46,4 +48,7 @@ uploads/
 
 json/
 
-run.js
+# run.js
+.DS_Store
+.editorconfig
+.gitattributes
