@@ -37,10 +37,6 @@ node_modules
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
-public/dist/*
-!public/dist/main.**
-!public/dist/*.json
-
 uploads/
 
 .idea
