@@ -12,3 +12,11 @@ addons:
 script:
 - npm run lint
 - npm run test
+deploy:
+  provider: s3
+  access_key_id: AKIAI7MKGPRHR65CWF4Q
+  secret_access_key:
+    secure: tWqXdA5EK2Q3SD7d8x8LKxW4qXiNzmj+usbIf9Ict+0PL1BLDTSfbTwHabrMQH7aHSLnVqr2Hiigsil8EKiE4uDPMJNiH2Kia6qXXkDt4CY/nSIwxpmQsKy9eq8bMo+Lg0fCaEoOYp5EXi05mtFYzY5MEnrNNOs9wcJ3nISYJ+f3qS0Q5W7r+kY3V6xgRO2wtMR7g5BN/ib3+JMeiKIgB/6U+BekKmAiM7+jq+snFsojV7sUZIK+25erkd52z2Aq0QzYEeVPlY/3bRc2ZIR3nveOUx+fPNX55m5UrSJWMlywTxtkTgLSmv7IwglBzsUTgiU0i5Z5SwhxeIgMNXMC84+tQ0zKvoyJ3tJ1E2gNx/tWw6HawAO3iRSBilK3h3H0z7j91eO4lHrkPsuCNcmgBwMaRPyXCiEGavhj3mNS/Owze0w0m3fq5JAcQV9+x3DlLvGKNKicNJYbunCyDUUFQg76nhkTySKVqfSyq1+KE6xtJETCULE/kymE/H4lIr1nKxazrgCzlCIyL4KpzYjWhRRhOrbfD/Kb0W5Mpecsl4jHTF7wfqUKJHOYr+MthrHY3akq2MlQuzB2aAoqg9O8OPNIhSx9aZSqEJM75Acu3fZmFTAbZODR05vG797e5LmWdjWUoOFRBjEQ9xwiZl/7dAJ9sIzxOmn8GtQti3kqsdM=
+  bucket: personalayee
+  skip_cleanup: true
+  local_dir: public

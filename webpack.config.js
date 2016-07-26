@@ -113,6 +113,15 @@ const config = {
         ],
       },
       {
+        test: /\.scss$/,
+        loaders: [
+          'style-loader',
+          `css-loader?${JSON.stringify({ sourceMap: isDebug, minimize: !isDebug })}`,
+          'postcss-loader?pack=sass',
+          'sass-loader',
+        ],
+      },
+      {
         test: /\.json$/,
         exclude: [
           path.resolve(__dirname, './routes.json'),
@@ -146,6 +155,7 @@ const config = {
 
   // The list of plugins for PostCSS
   // https://github.com/postcss/postcss
+  
   postcss(bundler) {
     return [
       // Transfer @import rule by inlining content, e.g. @import 'normalize.css'
