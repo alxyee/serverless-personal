@@ -39,6 +39,7 @@ node_modules
 
 public/dist/*
 !public/dist/main.**
+!public/dist/*.json
 
 uploads/
 
