@@ -95,6 +95,7 @@ tasks.set('build', () => {
 //
 // Build and publish the website
 // -----------------------------------------------------------------------------
+//TODO fill this in
 tasks.set('publish', () => {
   global.DEBUG = process.argv.includes('--debug') || false;
   const s3 = require('s3');
@@ -103,12 +104,14 @@ tasks.set('publish', () => {
       s3Options: {
         region: 'us-west-2',
         sslEnabled: true,
+        accessKeyId: "FILL THIS IN",
+        secretAccessKey: "FILL THIS IN",
       },
     });
     const uploader = client.uploadDir({
       localDir: 'public',
       deleteRemoved: true,
-      s3Params: { Bucket: 'personalayee' },
+      s3Params: { Bucket: 'FILL BUCKET IN' },
     });
     uploader.on('error', reject);
     uploader.on('end', resolve);
