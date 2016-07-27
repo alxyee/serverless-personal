@@ -10,7 +10,7 @@ addons:
     packages:
     - g++-4.8
 scripts:
-- node run
+- npm run build
 deploy:
   provider: s3
   access_key_id: AKIAI7MKGPRHR65CWF4Q
