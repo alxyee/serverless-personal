@@ -14,7 +14,6 @@ import s from './styles.css';
 import {title, html} from './index.md';
 import {connect} from 'react-redux'
 
-import * as HomeActions from './home-reducer'
 
 class HomePageView extends React.Component {
 
@@ -53,7 +52,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         buttonWasClicked: () => {
-            dispatch(HomeActions.updateButton())
+
         }
     }
 }
