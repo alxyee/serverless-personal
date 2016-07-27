@@ -17,50 +17,66 @@ import {connect} from 'react-redux'
 
 class HomePageView extends React.Component {
 
-    static propTypes = {
-        articles: PropTypes.array.isRequired,
-    };
+  static propTypes = {
+    articles: PropTypes.array.isRequired,
+  };
 
-    componentDidMount() {
-        document.title = title;
-    }
+  componentDidMount() {
+    document.title = title;
+  }
 
-    render() {
-        return (
-            <Layout className={s.content}>
-                <button onClick={()=>{this.props.buttonWasClicked()}}>Click me now</button>
-                <div dangerouslySetInnerHTML={{ __html: html }}/>
-                <h4>Articles</h4>
-                <ul>
-                    {this.props.articles.map((article, i) =>
-                        <li key={i}><a href={article.url}>{article.title}</a> by {article.author}</li>
-                    )}
-                </ul>
-                <p>
-                    <br /><br />
-                </p>
-            </Layout>
-        );
-    }
+  render() {
+    return (
+      <Layout className={s.content}>
+        <div className="mdl-card mdl-shadow--4dp">
+          <div className="mdl-card__title">
+            <h2 className="mdl-card__title-text">title Text Goes Here</h2>
+          </div>
+          <div className="mdl-card__supporting-text">
+            This text might describe the photo and provide further information, such as where and
+            when it was taken.
+          </div>
+          <div className="mdl-card__actions">
+            <a href="(URL or function)">Related Action</a>
+          </div>
+        </div>
+
+
+        <button className={"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"}
+                onClick={()=>{this.props.buttonWasClicked()}}>Click me now
+        </button>
+        <div dangerouslySetInnerHTML={{ __html: html }}/>
+        <h4>Articles</h4>
+        <ul>
+          {this.props.articles.map((article, i) =>
+            <li key={i}><a href={article.url}>{article.title}</a> by {article.author}</li>
+          )}
+        </ul>
+        <p>
+          <br /><br />
+        </p>
+      </Layout>
+    );
+  }
 
 }
 
 const mapStateToProps = (state, ownProps) => {
-    return {}
+  return {}
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-    return {
-        buttonWasClicked: () => {
+  return {
+    buttonWasClicked: () => {
 
-        }
     }
+  }
 }
 
 const HomePage =
-connect(
+  connect(
     mapStateToProps,
     mapDispatchToProps
-)(HomePageView)
+  )(HomePageView)
 
 export default HomePage;
