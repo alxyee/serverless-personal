@@ -1,4 +1,4 @@
-function boilerplate(state = ({}), action=null) {
+function boilerplate(state = {}, action=null) {
   switch (action.type) {
   default:
     return state
