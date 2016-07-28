@@ -13,9 +13,8 @@ scripts:
 - npm run build
 deploy:
   provider: s3
-  access_key_id: AKIAI7MKGPRHR65CWF4Q
-  secret_access_key:
-    secure: xxbhAyxEgdZa3+oCvjZvd5lliDtLOx8rsQhZwqzdhBvJLFhOdXve1oTTtT63rcmk9Gh4tSDYwROPh1kAoGV2UwDS9sLd5ll3BhZ+eefgKbbxJU8A3yRzdYunMnIrHC2KC/i8+KH6pUBXRKmVxHqRNgWwWyIYY4/U09K9NBL3+4nxve8U6HSEn5Xa4gd7LkRrrHFcqxbSnLmt/CRLOkLrq/dAghfMcuWQ1pKmcIo2DiQ3fknU7vT+xsNMojXAswWW+823aCmLAW5qtCflRpTNne1WbHDwt6/ll+G8zhSbl1zMPiP81RDBxoXu43tNFZnzs7jIFpMSpS2r5zNKSLR9j5gtvoCXw++57Tk0rJ21xdXPzs4oZ+dEWFAlDMhz5Vl10ciVnrCiZ+wjPLsdgthHGSHq6UWcw/furXPe1yT1GNaA7CmVSf87tTzcSYaZhQgDES7ozsVopGf20I2Zy2OvBTTWpxccyQ4xXoY7iDfs5gs0k5zvwn37nAmVHB6CqgBRSJ1nxjMe3rD9hl42vehX8HKgerJgkXh3MBUWktngXRSk+INSetUS/ESkF+OMi5xZ6hZ0YIG2UBEzCOSXFjlIAzX20IDLlNsA8q5HMTUGfUD+J5ja8Xi8tOcyz21wpxZrFqEU7lYDX5HXyHW1nTCm/2+SQceoqMfTmJGjN2OVhCE=
-  bucket: personalayee
+  access_key_id: #TODO: Fill this in#
+  secret_access_key: #TODO: Fill this in#
+  bucket: #TODO: Fill this in#
   skip_cleanup: true
   local_dir: public
