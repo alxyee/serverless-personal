@@ -9,7 +9,6 @@
  */
 
 import React, {PropTypes} from 'react';
-import Layout from '../../components/Layout';
 import s from './styles.css';
 import {title, html} from './index.md';
 import {connect} from 'react-redux'
@@ -27,12 +26,9 @@ class HomePageView extends React.Component {
 
   render() {
     return (
-      <Layout className={s.content}>
-        <button className={"mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"}
-                onClick={()=>{this.props.buttonWasClicked()}}>Click me now
-        </button>
-        <div>This is a boilerplate</div>
-      </Layout>
+      <div>
+        Start Website Here
+      </div>
     );
   }
 
