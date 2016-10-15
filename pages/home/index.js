@@ -28,6 +28,7 @@ class HomePageView extends React.Component {
     return (
       <div>
         Start Website Here
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     );
   }
